@@ -1,5 +1,6 @@
 import './App.css';
-import SkillsTools from './Components/Skills/Skills';
+import SkillsTools from './Components/Toolskills/Skills';
+
 import About from './Components/about/about';
 import Hero from './Components/hero/hero';
 
@@ -11,6 +12,7 @@ function App() {
       <Hero/>
       <About/>
       <SkillsTools/>
+      
       
     </div>
   );

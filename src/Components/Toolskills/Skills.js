@@ -1,22 +1,23 @@
 import React from 'react';
 import Paper from '@mui/material/Paper';
 import './Skills.css';
-import html5 from '../assets/skills/html5-logo.png';
-import css3 from '../assets/Skills/css3.png';
-import js from '../assets/Skills/js.png';
-import react from '../assets/Skills/react.png';
-import bootstrap from '../assets/Skills/bootstrap.png';
-import reactbootstrap from '../assets/Skills/reactbootstrap.png';
-import materialUi from '../assets/Skills/materialUi.png';
-import mongodb from '../assets/Skills/mongodb.png';
-import mysql from '../assets/Skills/mysql.png';
-import nodejs from '../assets/Skills/nodejs.png';
-import git from '../assets/Skills/git.png';
-import github from '../assets/Skills/github.png';
-import vscode from '../assets/tools/vscode.png';
-import vercel from '../assets/tools/vercel.png';
-import postman from '../assets/tools/postman.png';
-import netlify from '../assets/tools/netlify.png';
+import html5 from '../assets/TandS/html5.png';
+import css3 from '../assets/TandS/css3.png';
+import js from '../assets/TandS/js.png';
+import react from '../assets/TandS/react.png';
+import bootstrap from '../assets/TandS/bootstrap.png';
+import reactbootstrap from '../assets/TandS/reactbootstrap.jpg';
+import materialUi from '../assets/TandS/materialUi.png';
+import mongodb from '../assets/TandS/mongodb.png';
+import mysql from '../assets/TandS/mysql.png';
+
+import nodejs from '../assets/TandS/nodejs.png';
+import git from '../assets/TandS/git.png';
+import github from '../assets/TandS/github.png';
+import vscode from '../assets/TandS/vscode.jpg';
+import vercel from '../assets/TandS/vercel.png';
+import postman from '../assets/TandS/postman.png';
+import netlify from '../assets/TandS/netlify.png';
 import Cardss from './cards';
 
 
@@ -97,7 +98,7 @@ const SkillsTools=()=>{
       <div style={{width:"100vw",justifyContent:"center",alignItems:'center', display:"flex"}} >
         <div style={{width:"90%"}}>
         <Paper elevation={3} >
-           <h4 className='text-align-left d-flex p-3'>Skillset :</h4>
+           <h4 className='text-align-center d-flex p-3'>Skillset :</h4>
            <div className='d-flex flex-wrap  px-5 cardAlign'>
             {skills.map((e=>{
              return <Cardss details={e} key={e.name} />
