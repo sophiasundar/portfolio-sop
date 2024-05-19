@@ -12,7 +12,7 @@ function Cardss(props){
             <Card sx={{ display: 'flex' , width:'250px' }} className="mb-4 cardStyle" >
       <CardMedia
         component="img"
-        sx={{ width: 120 ,height:120 }}
+        sx={{ width: 80 ,height:80 }}
         image={props.details.image}
         className="p-3"
         alt="Live from space album cover"
