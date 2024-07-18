@@ -3,21 +3,14 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { IconButton, Paper, Stack } from '@mui/material';
 import ArticleIcon from '@mui/icons-material/Article';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-// import Tooltip from '@mui/material/Tooltip';
 import about from '../assets/profile/about.png'
-import './hero.css';
+
+
 
 
 const Hero = () =>{
 
-   // const ToggleIcon = ({ selected, onToggle })=>{
-   //    const [isTextVisible, setIsTextVisible] = useState(false);
-   // }
-    
-   // const handleToggle = () =>{
-   //    onToggle(!selected);
-   //    setIsTextVisible(!isTextVisible);
-   // }
+   
 
     return(
        <>
@@ -29,30 +22,32 @@ const Hero = () =>{
                  <hr/>
                  <h4>Mern Stack Web Developer</h4>
                  <div className='d-flex flex-row justify-content-center'>
-                 <Stack direction='row' spacing={3}>
-                        <IconButton color="primary"  component="label">
-                           
-                        <a href='https://github.com/sophiasundar' rel="noreferrer" target="_blank">
-                        <GitHubIcon />
-                        </a>
+                 <Stack direction='row' spacing={3} >
+                      
+                       <IconButton color="primary"  component="label">
+                          <a href='https://github.com/sophiasundar' rel="noreferrer" target="_blank">
+                           <GitHubIcon/>  
+                        </a> <span className="resume-text">GitHub</span>
                         </IconButton>
                         
                         <IconButton color="primary"  component="label" >
                         <a href='mailto: sophiagifta17@gmail.com' rel="noreferrer" target="_blank">
                         <MailOutlineIcon />
-                        </a>
+                        </a><span className="resume-text">Email</span>
                         </IconButton>
 
-                        <IconButton color="primary"  component="label" >
+                        <IconButton color="primary"  component="label"  >
+                           
                         <a href='https://www.linkedin.com/in/sophia-gifta17/' rel="noreferrer" target="_blank">
                          <LinkedInIcon/>
-                        </a>
+                        </a> <span className="resume-text">LinkedIn</span>
                         </IconButton>
 
                         <IconButton color="primary"  component="label" >
                         <a href='https://drive.google.com/file/d/1-1OS6SoCp7AlKAMlciF-lQZjicmdvjSa/view?usp=sharing' rel="noreferrer" target="_blank">
                          <ArticleIcon/>
-                        </a>
+                        </a> 
+                        <span className="resume-text">Resume</span>
                         </IconButton>
                     </Stack>
 

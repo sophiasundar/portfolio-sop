@@ -4,12 +4,12 @@ import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import './cards.css';
+
 
 function Cardss(props){
     return(
         < div className='vsk'>
-            <Card sx={{ display: 'flex' , width:'180px' }} className="mb-4 cardStyle" >
+            <Card sx={{ display: 'flex' , width:'190px' }} className="mb-2 cardStyle" >
       <CardMedia
         component="img"
         sx={{ width: 80 ,height:80 }}
@@ -19,8 +19,8 @@ function Cardss(props){
       />
       <Box sx={{ display: 'flex' }}>          
         <CardContent sx={{ flex: '0' }}>
-          <Typography component="div" variant="p">
-            {props.details.name}
+          <Typography component="div" variant="h6">
+           {props.details.name}
           </Typography>
           
           

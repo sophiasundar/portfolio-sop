@@ -1,5 +1,4 @@
 import React from 'react';
-import './Skills.css';
 import html5 from '../assets/TandS/html5.png';
 import css3 from '../assets/TandS/css3.png';
 import js from '../assets/TandS/js.png';
