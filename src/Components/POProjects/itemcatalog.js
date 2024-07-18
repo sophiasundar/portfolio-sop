@@ -20,7 +20,7 @@ import Paper from '@mui/material/Paper';
               <div className="col1" >
                   
                   <div className="col-md-5 col-md-offset-1">
-                  <div  className="cm" style={{maxWidth:"480px", maxHeight:"480px", marginTop:'5px', marginLeft:'40px', marginBottom:'20px'}}>
+                  <div  className="cm" style={{maxWidth:"580px", maxHeight:"480px", marginTop:'5px', marginLeft:'40px', marginBottom:'20px'}}>
                           
                           <CardMedia
                               component="img"
