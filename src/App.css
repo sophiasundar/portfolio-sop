@@ -1,6 +1,6 @@
 .App {
     text-align: center;
-    background-color: palevioletred;
+    background-color:powderblue;
   }
   
   .App-logo {
@@ -14,7 +14,6 @@
     }
   }
   body {
-    /* overflow-y: hidden; Hide vertical scrollbar */
     overflow-x: hidden; 
   }
   
@@ -41,3 +40,41 @@
       transform: rotate(360deg);
     }
   }
+
+  .hero{
+    margin-left: 10px;
+  }
+
+  .skill{
+      margin-top: 50px;
+  }
+
+  .skillset{
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .skillsetcontainer{
+    margin-right: 110px;
+  }
+
+  .toolscontainer{
+    margin-right: 105px;
+  }
+
+  .container{
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.paper{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.project{
+  margin-top: 30px ;
+  margin-bottom: -80px;
+ 
+}
+

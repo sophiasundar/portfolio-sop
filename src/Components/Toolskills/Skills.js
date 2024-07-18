@@ -1,5 +1,4 @@
 import React from 'react';
-import Paper from '@mui/material/Paper';
 import './Skills.css';
 import html5 from '../assets/TandS/html5.png';
 import css3 from '../assets/TandS/css3.png';
@@ -97,23 +96,22 @@ const SkillsTools=()=>{
       <h1>Skills & Tools</h1>
       <div style={{width:"100vw",justifyContent:"center",alignItems:'center', display:"flex"}} >
         <div style={{width:"90%"}}>
-        <Paper elevation={3} >
-           <h4 className='text-align-center d-flex p-3'>Skillset :</h4>
-           <div className='d-flex flex-wrap  px-5 cardAlign'>
+       
+           <h4 className='skillset'>Skillset :</h4>
+           <div className='skillsetcontainer'>
             {skills.map((e=>{
              return <Cardss details={e} key={e.name} />
             }))}
            </div>
-        </Paper>
-        <br/ >
-        <Paper elevation={3} >
-           <h4 className='text-align-left d-flex p-3'>Tools I used :</h4>
-           <div className='d-flex flex-wrap  px-5 cardAlign'>
+        
+        
+           <h4 className='tools'>Tools I used :</h4>
+           <div className='toolscontainer'>
             {tools.map((e=>{
              return <Cardss details={e} key={e.name} />
             }))}
            </div>
-        </Paper>
+       
         </div>
       </div>
       <br/>

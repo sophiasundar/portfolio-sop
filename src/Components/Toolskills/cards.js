@@ -9,17 +9,17 @@ import './cards.css';
 function Cardss(props){
     return(
         < div className='vsk'>
-            <Card sx={{ display: 'flex' , width:'250px' }} className="mb-4 cardStyle" >
+            <Card sx={{ display: 'flex' , width:'180px' }} className="mb-4 cardStyle" >
       <CardMedia
         component="img"
         sx={{ width: 80 ,height:80 }}
         image={props.details.image}
         className="p-3"
-        alt="Live from space album cover"
+        alt="logo of skill and tools"
       />
       <Box sx={{ display: 'flex' }}>          
-        <CardContent sx={{ flex: '1 0 auto', }}>
-          <Typography component="div" variant="h5">
+        <CardContent sx={{ flex: '0' }}>
+          <Typography component="div" variant="p">
             {props.details.name}
           </Typography>
           
