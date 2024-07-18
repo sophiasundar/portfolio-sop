@@ -3,6 +3,8 @@ import SkillsTools from './Components/Toolskills/Skills';
 import About from './Components/about/about';
 import Hero from './Components/hero/hero';
 import ItemCat from './Components/POProjects/itemcatalog.js'
+import BountifulBowl from './Components/POProjects/BountifulBowl.js';
+
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
       <About/>
       <SkillsTools/>
       <ItemCat/>
+      <BountifulBowl/>
       
     </div>
   );

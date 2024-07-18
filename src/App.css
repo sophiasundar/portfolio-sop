@@ -83,7 +83,7 @@
 }
 .ppaper{
   width: 700px;
-  margin-left: 450px;
+  margin-left: 300px;
   margin-bottom: 100px;
 }
 
@@ -93,15 +93,13 @@
   text-align: center; 
 }
 
-.projectsection{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 10px;
-}
+
 
 .col1{
+  margin-left: 70px;
   padding: 10px;
   text-align: center;
+  width: 100px;
 }
 
 .col2{
@@ -148,7 +146,7 @@
 }
 
 .about{
-  margin-left: 400px;
+  margin-left: 270px;
   margin-right: 250px;
 }
 
@@ -163,4 +161,42 @@
 
 .highlights{
   margin-bottom: 20px;
+}
+
+.card{
+  
+  width: 540px;
+  height: 260px;
+  margin-top: '5px';
+  margin-Bottom:'20px';
+ 
+}
+.description{
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.dis{
+    margin-left: 40px;
+    width:250px
+    
+}
+
+.feature{
+  margin-right: 30px;
+    width: 350px;
+}
+
+.buttons{
+  margin-right: 250px;
+  margin-bottom: 10px;
+}
+
+.card1:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: navy;
+  color: white;
+ transition: background-color 3s;
 }

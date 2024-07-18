@@ -19,7 +19,7 @@ function Cardss(props){
       />
       <Box sx={{ display: 'flex' }}>          
         <CardContent sx={{ flex: '0' }}>
-          <Typography component="div" variant="h6">
+          <Typography component="div" variant="p">
            {props.details.name}
           </Typography>
           
