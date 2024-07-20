@@ -15,12 +15,12 @@ import Typography from '@mui/material/Typography';
    function ItemCat (){
      return(
         <div>
-           <h1 className='project'>Project</h1>
+           <h1 className='project'>PROJECTS</h1>
         <div className="highlights">
           <div >
 
           <Paper className="ppaper" elevation={3} style={{ marginTop:'100px'}}>
-          <b><p className='itemcat'>Item Catalog </p></b>
+          <b><h3 className='itemcat'>ITEM CATALOG </h3></b>
           <div  className='projectsection'>
               <div className="col1" >
                   
@@ -51,7 +51,10 @@ import Typography from '@mui/material/Typography';
                                     
                                     <Typography variant="body2">
                                     <p>Item catalog is to show case the items or products to users.
-                                        It serves as a didgital representation of items allowing users to browse, search and 
+                                      <br></br>
+                                        It serves as a digital representation of items allowing users to browse,
+                                          <br></br>
+                                         search and 
                                         view information about each item.
                                            </p>
                                     </Typography>
@@ -86,8 +89,8 @@ import Typography from '@mui/material/Typography';
 
 
                       <Stack className='buttons' direction="row-reverse" spacing={2}>
-                          <Button size="small" variant='outlined' href="https://github.com/sophiasundar/capstone" target="_blank" startIcon={<GitHubIcon />}>Github</Button>
-                          <Button size="small"  variant='outlined' href="https://frontendcapstone-7ipu.vercel.app/" target="_blank" startIcon={<LaunchIcon/>} >Site</Button>
+                          <Button size="small" variant='contained' href="https://github.com/sophiasundar/capstone" target="_blank" startIcon={<GitHubIcon />}>Github</Button>
+                          <Button size="small"  variant='contained' href="https://frontendcapstone-7ipu.vercel.app/" target="_blank" startIcon={<LaunchIcon/>} >Site</Button>
                       </Stack>
                      
                   </div>

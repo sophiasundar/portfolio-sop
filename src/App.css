@@ -82,9 +82,14 @@
  
 }
 .ppaper{
-  width: 700px;
+  box-shadow: rgba(0, 0.55, 0, 0.55) 0px 5px 15px;
+  color: white;
+  width: 650px;
   margin-left: 300px;
   margin-bottom: 100px;
+  background-color:beige;
+  border: 0.3px solid grey;
+  transition: background-color 3s;
 }
 
 .resume-text{
@@ -115,6 +120,10 @@
   height:100vh;
   background-size:cover;
 }   
+
+.stackhero{
+  margin-left: 90px;
+}
 
 .content{
   display: flex;
@@ -157,6 +166,7 @@
 
 .itemcat{
   margin-top: 20px;
+  margin-left: 20px;
 }
 
 .highlights{
@@ -169,7 +179,8 @@
   height: 260px;
   margin-top: '5px';
   margin-Bottom:'20px';
- 
+  margin-left: -25px;
+  
 }
 .description{
   display: grid;
@@ -179,24 +190,71 @@
 }
 
 .dis{
-    margin-left: 40px;
-    width:250px
-    
+   
+    margin-left: 10px;
+    width:280px
+   
 }
 
 .feature{
-  margin-right: 30px;
-    width: 350px;
+  margin-right: 10px;
+    width: 300px;
+}
+
+.des{
+  margin-left: 10px;
+  width:280px
+}
+
+.fea{
+  margin-right: 10px;
+  width: 300px;
 }
 
 .buttons{
-  margin-right: 250px;
+  margin-right: 230px;
   margin-bottom: 10px;
 }
 
 .card1:hover{
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0.55, 0, 0.55) 0px 5px 15px;
   background-color: navy;
   color: white;
  transition: background-color 3s;
+ 
+}
+
+.boxnav{
+  margin-left: 600px;
+}
+
+.name{
+  width: 600px;
+  
+  
+}
+
+.email{
+  width: 600px;
+}
+
+.message{
+  width: 400px;
+  height: 200px;
+}
+
+.form{
+  margin-top: 10px ;
+}
+
+.papercontact{
+  
+  width: 650px;
+  margin-left: 300px;
+  margin-bottom: 100px;
+  
+}
+
+.contactpaper{
+  margin-top: 10px;
 }

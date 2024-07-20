@@ -10,7 +10,7 @@ import about2 from '../assets/profile/about2.png';
 export default function About(){
     return(
         <div>
-          <h1 className='aboutheader'>About</h1>
+          <h1 className='aboutheader'>ABOUT</h1>
         < div className='about'>
         <Card sx={{ maxWidth: 750 , margin: "30px, 0px, 30px, 0px" }} elevation={6}>
       <CardActionArea>

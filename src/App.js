@@ -2,20 +2,26 @@ import './App.css';
 import SkillsTools from './Components/Toolskills/Skills';
 import About from './Components/about/about';
 import Hero from './Components/hero/hero';
-import ItemCat from './Components/POProjects/itemcatalog.js'
-import BountifulBowl from './Components/POProjects/BountifulBowl.js';
+import PortNavBar from './Components/navBar.js';
+import Projects from './Components/POProjects/Projects.jsx';
+import Contact from './Components/Contact/contact.jsx';
+
 
 
 function App() {
   return (
     <div className="App">
       
-      <Hero/>
-      <About/>
-      <SkillsTools/>
-      <ItemCat/>
-      <BountifulBowl/>
-      
+
+          
+                <PortNavBar/>
+
+                <Hero/>
+                <About/>
+                <SkillsTools/>
+                <Projects/>
+                <Contact/>
+
     </div>
   );
 }

@@ -21,7 +21,7 @@ function BountifulBowl(){
 
           <Paper className="ppaper" elevation={3} style={{ marginTop:'100px'}}>
 
-          <b><p className='itemcat'>BountifulBowl</p></b>
+          <b><h3 className='itemcat'>BOUNTIFULBOWL</h3></b>
           <div  className='projectsection'>
               <div className="col1" >
                   
@@ -44,7 +44,7 @@ function BountifulBowl(){
                   <div className='col2' >
                 
                   <div className='description'>
-                            <div className='dis'>
+                            <div className='des'>
                             <Card  className='card1' sx={{ minWidth: 175 }}>
                                   <CardContent>
                                     <Typography sx={{ fontSize: 14 }} gutterBottom>
@@ -53,17 +53,17 @@ function BountifulBowl(){
                                     
                                     <Typography variant="body2">
                                     <p> Purpose of this application is to serve for orphan people, the 
-                                        surplus amount of food can be utilised by the needy. The banquet manager will create 
-                                        the list of food and banquet address, avaliablity date and time of the food before get wasted.
-                                         The orphanage manager whoever ready to recieve the food will send email to banquet manager.
+                                        surplus amount of food <br></br> can be  utilised by the needy. <br></br>  The banquet manager will create 
+                                        the list of food and banquet address, avaliablity date and time of the food before get wasted.<br></br>
+                                         The orphanage manager whoever ready to recieve <br></br> the food will send email to banquet manager.
                                            </p>
                                     </Typography>
                                   </CardContent>
                                  
                                 </Card>
                                            </div>
-                                           <div className='feature'>
-                                           <Card className='card1' sx={{ minWidth: 175, height: 333 }}>
+                                           <div className='fea'>
+                                           <Card className='card1' sx={{ minWidth: 175, height: 353 }}>
                                   <CardContent>
                                     <Typography sx={{ fontSize: 14 }}  gutterBottom>
                                     <h4>Features: </h4>
@@ -91,8 +91,8 @@ function BountifulBowl(){
                            </div>
 
                       <Stack className='buttons' direction="row-reverse" spacing={2}>
-                          <Button size="small" variant='outlined' href="https://github.com/sophiasundar/bountifulbowl" target="_blank" startIcon={<GitHubIcon />}>Github</Button>
-                          <Button size="small"  variant='outlined' href="https://bountifulbowl.vercel.app/" target="_blank" startIcon={<LaunchIcon/>} >Site</Button>
+                          <Button size="small" variant='contained' href="https://github.com/sophiasundar/bountifulbowl" target="_blank" startIcon={<GitHubIcon />}>Github</Button>
+                          <Button size="small"  variant='contained' href="https://bountifulbowl.vercel.app/" target="_blank" startIcon={<LaunchIcon/>} >Site</Button>
                       </Stack>
                      
                   </div>

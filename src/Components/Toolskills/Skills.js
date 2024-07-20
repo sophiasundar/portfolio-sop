@@ -92,7 +92,7 @@ const SkillsTools=()=>{
     return(
         <>
             <div className='skill ' >
-      <h1>Skills & Tools</h1>
+      <h1>SKILLS-TOOLS</h1>
       <div style={{width:"100vw",justifyContent:"center",alignItems:'center', display:"flex"}} >
         <div style={{width:"90%"}}>
        

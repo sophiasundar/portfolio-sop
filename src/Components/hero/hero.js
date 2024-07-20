@@ -4,7 +4,7 @@ import { IconButton, Paper, Stack } from '@mui/material';
 import ArticleIcon from '@mui/icons-material/Article';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import about from '../assets/profile/about.png'
-
+import Tooltip from '@mui/material/Tooltip';
 
 
 
@@ -22,33 +22,39 @@ const Hero = () =>{
                  <hr/>
                  <h4>Mern Stack Web Developer</h4>
                  <div className='d-flex flex-row justify-content-center'>
-                 <Stack direction='row' spacing={3} >
-                      
+                 <Stack direction='row' spacing={3} className='stackhero' >
+                        <Tooltip title="Github">
                        <IconButton color="primary"  component="label">
                           <a href='https://github.com/sophiasundar' rel="noreferrer" target="_blank">
                            <GitHubIcon/>  
-                        </a> <span className="resume-text">GitHub</span>
+                        </a> 
                         </IconButton>
+                        </Tooltip>
                         
+                        <Tooltip title="Email">
                         <IconButton color="primary"  component="label" >
                         <a href='mailto: sophiagifta17@gmail.com' rel="noreferrer" target="_blank">
                         <MailOutlineIcon />
-                        </a><span className="resume-text">Email</span>
+                        </a>
                         </IconButton>
+                        </Tooltip>
 
+                        <Tooltip title='LinkedIn'>
                         <IconButton color="primary"  component="label"  >
-                           
-                        <a href='https://www.linkedin.com/in/sophia-gifta17/' rel="noreferrer" target="_blank">
+                           <a href='https://www.linkedin.com/in/sophia-gifta17/' rel="noreferrer" target="_blank">
                          <LinkedInIcon/>
-                        </a> <span className="resume-text">LinkedIn</span>
+                        </a>
                         </IconButton>
+                        </Tooltip>
 
+                        <Tooltip title='Resume'>
                         <IconButton color="primary"  component="label" >
                         <a href='https://drive.google.com/file/d/1-1OS6SoCp7AlKAMlciF-lQZjicmdvjSa/view?usp=sharing' rel="noreferrer" target="_blank">
                          <ArticleIcon/>
                         </a> 
-                        <span className="resume-text">Resume</span>
-                        </IconButton>
+                       </IconButton>
+                        </Tooltip>
+
                     </Stack>
 
                  </div>
