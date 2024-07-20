@@ -21,15 +21,15 @@ import Button from '@mui/joy/Button';
                         <div >
                      <FormControl >
                         <div className='form'>
-                        {/* <br></br>  */}
+                        
                          <TextField className='name' id="outlined-basic" label='Name' type='text' variant="outlined" />
 
 
-                        
+                           
                         <TextField className='email' id="outlined-basic" label="Email" type='email' variant="outlined" />
-                        <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText>
+                        <FormHelperText  className='text' id="my-helper-text">We'll never share your email.</FormHelperText>
 
-                        <Textarea className='message' name="Outlined" placeholder="Type in here…" variant="outlined" />
+                        <Textarea className='message' name="Outlined" placeholder="Message:  Type in here…" variant="outlined" />
                      
                    <Button className='buttons' type="submit">Submit</Button>
                        </div>

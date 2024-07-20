@@ -235,17 +235,23 @@
 }
 
 .email{
+  margin-top: 50px ;
   width: 600px;
+ 
 }
 
 .message{
-  width: 400px;
+  width: 600px;
   height: 200px;
+  margin-left: 27px;
+  margin-bottom: 20px;
 }
 
 .form{
-  margin-top: 10px ;
+  margin-top: 40px ;
+  margin-bottom: 40px;
 }
+
 
 .papercontact{
   
@@ -256,5 +262,5 @@
 }
 
 .contactpaper{
-  margin-top: 10px;
+  margin-top: 30px;
 }
