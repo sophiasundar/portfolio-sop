@@ -1,6 +1,7 @@
 .App {
     text-align: center;
     background-color:powderblue;
+   
   }
 
   .cardStyle:hover{
@@ -240,10 +241,15 @@
  
 }
 
+.emaildiv{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .message{
   width: 600px;
   height: 200px;
-  margin-left: 27px;
+  margin-left: 1px;
   margin-bottom: 20px;
 }
 
@@ -254,13 +260,14 @@
 
 
 .papercontact{
-  
+  margin-top: 30px ;
   width: 650px;
   margin-left: 300px;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
   
 }
 
-.contactpaper{
-  margin-top: 30px;
+.contact{
+  margin-top: 250px;
+  
 }

@@ -1,50 +1,103 @@
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import Paper from '@mui/material/Paper';
-import TextField from '@mui/material/TextField';
-import * as React from 'react';
 import Box from '@mui/material/Box';
-import { FormControl, FormHelperText } from '@mui/material';
-import Textarea from '@mui/joy/Textarea';
-import Button from '@mui/joy/Button';
+import {toast} from 'react-toastify';
 
 
-    function Contact (){
+
+   export const Contact = ()=>{
+
+        const form = useRef();
+
+        const handleSubmit = (e) =>{
+            e.preventDefault();
+
+           
+        
+
+        emailjs
+        .send(
+
+            'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
+              publicKey: 'YOUR_PUBLIC_KEY',
+           }
+        )
+        .then((result)=>{
+            if(result.text === 'ok'){
+                toast.success('Your Message Sent Successfully 🙌🏽🎉✨ ',{
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                    backgroundColor: '#001F3F', 
+                    color: '#fff'
+                });
+            }
+        }).catch((error)=>{
+            console.log(error);
+            toast.error('Some Error Occured 😓', {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+                backgroundColor: '#001F3F', 
+                    color: '#fff'
+            })
+        })
+
+    }
         return(
             <div className="contact" >
                <h1>CONTACT</h1>
 
-             <div className="contactpaper" >
+             
 
-                <Paper className='papercontact' elevation={16} style={{ marginTop:'100px'}}>
+                <Paper className='papercontact' elevation={16} >
                      
                      <Box >
                    
                         <div >
-                     <FormControl >
-                        <div className='form'>
-                        
-                         <TextField className='name' id="outlined-basic" label='Name' type='text' variant="outlined" />
-
-
                            
-                        <TextField className='email' id="outlined-basic" label="Email" type='email' variant="outlined" />
-                        <FormHelperText  className='text' id="my-helper-text">We'll never share your email.</FormHelperText>
+                           
 
-                        <Textarea className='message' name="Outlined" placeholder="Message:  Type in here…" variant="outlined" />
+                        <form ref={form} onSubmit={handleSubmit}>
+                           <label>Name</label>
+                            <input type="text" name="from_name" />
+                            <label>Email</label>
+                            <input type="email" name="email_id" />
+                            <label>Message</label>
+                            <textarea name="message" />
+                            <input type="submit" value="Send" />
+                        </form>
+
                      
-                   <Button className='buttons' type="submit">Submit</Button>
-                       </div>
-                   </FormControl>
+
                    </div>
                    </Box>
+
+                   {/* start */}
+
+                   
+
+                           {/* end */}
 
                 </Paper>
                   
                  
-             </div>
+             
 
 
             </div>
         )
     }
 
-    export default Contact
+   

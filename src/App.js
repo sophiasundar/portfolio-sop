@@ -4,7 +4,7 @@ import About from './Components/about/about';
 import Hero from './Components/hero/hero';
 import PortNavBar from './Components/navBar.js';
 import Projects from './Components/POProjects/Projects.jsx';
-import Contact from './Components/Contact/contact.jsx';
+import { Contact }from './Components/Contact/contact.jsx';
 
 
 
