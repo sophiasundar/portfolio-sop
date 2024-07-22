@@ -58,7 +58,7 @@ import Button from '@mui/material/Button';
         )
         .then((response)=>{
            
-             alert('Your Message Sent Successfully 🙌🏽🎉✨ ',response);
+            console.log('Your Message Sent Successfully 🙌🏽🎉✨ ',response);
             setName('')
             setEmail('')
             setMessage('')

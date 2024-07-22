@@ -277,3 +277,14 @@
   margin-left: 260px !important;
   margin-bottom: 10px !important;
 }
+
+.cardmedia{
+  height: 250px;
+  width: 400px;
+  margin-left: 40px;
+  margin-top: -50px;
+}
+
+.cardcontent{
+  margin-top: 100px;
+}

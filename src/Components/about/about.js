@@ -4,22 +4,25 @@ import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import about2 from '../assets/profile/about2.png';
-
+// import about2 from '../assets/profile/about2.png';
+import about  from '../assets/about/girl coder.gif';
 
 export default function About(){
     return(
         <div>
           <h1 className='aboutheader'>ABOUT</h1>
         < div className='about'>
-        <Card sx={{ maxWidth: 750 , margin: "30px, 0px, 30px, 0px" }} elevation={6}>
+        <Card sx={{ maxWidth: 750 , margin: "10px, 0px, 10px, 0px" }} elevation={6}>
       <CardActionArea>
+        <div className='cardmedia'>
         <CardMedia
           component="img"
-          height="250"
-          image={about2}
+          height="450"
+          image={about}
           alt="green iguana"
         />
+        </div>
+        <div className='cardcontent'>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
            <b><h3>About me</h3></b> 
@@ -30,7 +33,9 @@ export default function About(){
           I'm proficient in JavaScript, React, Node.js, and MongoDB.
           </h2></Typography>
         </CardContent>
+        </div>
       </CardActionArea>
+      
     </Card>
         </div>
         </div>
