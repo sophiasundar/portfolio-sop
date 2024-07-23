@@ -1,10 +1,7 @@
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import { NavLink } from 'react-router-dom';
 import Tooltip from '@mui/material/Tooltip';
@@ -82,15 +79,7 @@ function PortNavBar (){
                 </Stack>
                 
 
-                <Box sx={{ flexGrow: 0 }}>
-                    
-                    <Tooltip title="Open settings">
-                    <IconButton sx={{ p: 0 }}>
-                        <Avatar alt="" src="" />
-                    </IconButton>
-                    </Tooltip>
-                    
-          </Box>
+                
 
         </Toolbar>
       </Container>
