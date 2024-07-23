@@ -1,4 +1,12 @@
 .App {
+    gap:2%;
+    flex-wrap: wrap;
+    border:0px solid;
+    width:90%;
+    margin-right:5%;
+    margin-left:5%;
+    margin-top:1%;
+    margin-bottom:2%;
     text-align: center;
     background-color:powderblue;
    
@@ -19,13 +27,104 @@
  .cardAlign{
    justify-content: space-between !important;
  }
- 
- /* @media screen and (max-width: 886px) { */
- @media screen and (max-width: 1280px) {
-  .cardAlign{
-   justify-content: space-around !important;
+
+ @media (max-width: 768px) { 
+  .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
- } 
+  .hero{
+    height: 1000px !important;  
+  }
+  .App{
+    text-align: center;
+    background-color:powderblue;
+    width: 500px;
+    height: 90%;
+  }
+  .about2{
+    width:400px;
+    margin-left: 30px !important;
+  }
+  .containerskill{
+    margin-left: 160px;
+  }
+  .highlights{
+    width: 100px !important ;
+    margin-left: -310px !important;
+  }
+
+  .papercontact{
+ 
+    width: 400px !important;
+    margin-left: 50px !important;
+    margin-bottom: 10px;
+  
+  }
+
+  .ppaper{
+    width: 500px !important;
+    height: 1050px ;
+  }
+
+  .buttons{
+    margin-right: 40px !important;
+  }
+  .cardimg{
+    width:400px !important;
+  }
+    .col2{
+     
+      width: 200px !important ;
+    }
+    
+  .card1{
+    width: 200px;
+    height: 600px;
+    font-size: 50px !important;
+  }
+
+  .card2{
+    width: 200px;
+    height: 600px !important;
+    font-size: 50px !important;
+  }
+
+  .contact{
+    height: 700px;
+    width: 400px;
+  }
+
+  .name{
+    width: 350px !important;
+    margin-top: 30px !important;
+    
+  }
+  
+  .email{
+    margin-top: 50px ;
+    width: 350px !important;
+   
+  }
+
+  .message{
+    width: 350px !important;
+  }
+
+}
+ /* end of media query  */
+
+
+
+
+
+
+.projects{
+  margin-left: -50px;
+ 
+ }
+
   
   body {
     overflow-x: hidden; 
@@ -50,7 +149,7 @@
     margin-left: 10px;
   }
 
-  .skill{
+  .skills-tools{
       margin-top: 50px;
   }
 
@@ -78,9 +177,9 @@
 }
 
 .project{
-  margin-top: 90px ;
-  margin-bottom: -80px;
- 
+  margin-top: 40px ;
+  margin-bottom: 40px;
+  margin-right: -70px;
 }
 .ppaper{
   box-shadow: rgba(0, 0.55, 0, 0.55) 0px 5px 15px;
@@ -155,7 +254,7 @@
   min-height:100vh;
 }
 
-.about{
+.about2{
   margin-left: 270px;
   margin-right: 250px;
 }
@@ -171,6 +270,7 @@
 }
 
 .highlights{
+  margin-right: -15px ;
   margin-bottom: 20px;
 }
 
@@ -225,13 +325,21 @@
  
 }
 
+.card2:hover{
+  box-shadow: rgba(0, 0.55, 0, 0.55) 0px 5px 15px;
+  background-color: navy;
+  color: white;
+ transition: background-color 3s;
+ 
+}
+
 .boxnav{
-  margin-left: 600px;
+  margin-left: 10px;
 }
 
 .name{
   width: 600px;
-  
+  margin-top: 30px !important;
   
 }
 
@@ -249,7 +357,7 @@
 .message{
   width: 600px;
   height: 200px;
-  margin-left: 1px;
+  margin-left: 25px;
   margin-bottom: 20px;
 }
 
@@ -268,23 +376,36 @@
 }
 
 .contact{
-  margin-top: 250px;
-  
+  margin-top: 20px;
 }
 
 .contactbtn{
   width:100px;
-  margin-left: 260px !important;
+  margin-left: 30px !important;
   margin-bottom: 10px !important;
 }
 
 .cardmedia{
   height: 250px;
   width: 400px;
-  margin-left: 40px;
+  margin-left: 10px;
   margin-top: -50px;
 }
 
 .cardcontent{
   margin-top: 100px;
+}
+
+.formtext{
+  
+  margin-left: 25px !important; 
+}
+
+.highlights{
+  margin-top: -70px;
+  
+}
+
+.containerskill{
+  margin-right: 130px;
 }

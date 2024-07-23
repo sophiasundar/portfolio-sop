@@ -9,10 +9,10 @@ import about  from '../assets/about/girl coder.gif';
 
 export default function About(){
     return(
-        <div>
+        <div id='about' className='about'>
           <h1 className='aboutheader'>ABOUT</h1>
-        < div className='about'>
-        <Card sx={{ maxWidth: 750 , margin: "10px, 0px, 10px, 0px" }} elevation={6}>
+        < div className='about2'>
+        <Card sx={{ maxWidth: 750 , margin: "10px, 0px, 10px, 0px" }} elevation={3}>
       <CardActionArea>
         <div className='cardmedia'>
         <CardMedia

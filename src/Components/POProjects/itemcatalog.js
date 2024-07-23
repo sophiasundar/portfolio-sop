@@ -19,7 +19,7 @@ import Typography from '@mui/material/Typography';
         <div className="highlights">
           <div >
 
-          <Paper className="ppaper" elevation={3} style={{ marginTop:'100px'}}>
+          <Paper className="ppaper" elevation={3} style={{ maxWidth: 750, marginTop:'100px'}}>
           <b><h3 className='itemcat'>ITEM CATALOG </h3></b>
           <div  className='projectsection'>
               <div className="col1" >
@@ -28,6 +28,7 @@ import Typography from '@mui/material/Typography';
                   <div  className="card" >
                           
                           <CardMedia
+                              className='cardimg'
                               component="img"
                               sx={{ height: 260 }}
                               image={catalog}
@@ -63,7 +64,7 @@ import Typography from '@mui/material/Typography';
                                 </Card>
                                            </div>
                                            <div className='feature'>
-                                           <Card className='card1' sx={{ minWidth: 175, height: 232 }}>
+                                           <Card className='card2' sx={{ minWidth: 175, height: 232 }}>
                                   <CardContent>
                                     <Typography sx={{ fontSize: 14 }}  gutterBottom>
                                     <h4>Features: </h4>

@@ -14,7 +14,7 @@ const Hero = () =>{
 
     return(
        <>
-          <div className='hero'  style={{height:"100vh"}}>
+          <div className='hero' id='hero'  style={{height:"100vh" }}  >
              <div className='content'>
                  <div height='100vh'>
 

@@ -4,7 +4,6 @@ import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Textarea from '@mui/joy/Textarea';
 import TextField from '@mui/material/TextField';
-import FormControl from '@mui/material/FormControl';
 import FormHelperText from '@mui/material/FormHelperText';
 import Button from '@mui/material/Button';
 
@@ -58,7 +57,7 @@ import Button from '@mui/material/Button';
         )
         .then((response)=>{
            
-            console.log('Your Message Sent Successfully 🙌🏽🎉✨ ',response);
+             alert('Your Message Sent Successfully 🙌🏽🎉✨ ',response);
             setName('')
             setEmail('')
             setMessage('')
@@ -70,8 +69,8 @@ import Button from '@mui/material/Button';
 
     }
         return(
-            <div className="contact" >
-               <h1>CONTACT</h1>
+            <div className="contact" id='contact' >
+               <h1 className='project'>CONTACT</h1>
 
              
 
@@ -82,11 +81,11 @@ import Button from '@mui/material/Button';
                         <div >
                            
                         
+                        <form  className='form'   onSubmit={handleSubmit}>
                        
-                        <FormControl className='form'  onSubmit={handleSubmit}>
-                        <h6 className="svalid">{validated}</h6>
+                        <h5 className="svalid">{validated}</h5>
 
-                        <div>
+                        <div className='namediv'>
                         <TextField className='name' id="outlined-basic" label="Name" variant="outlined" 
                            value={name}
                            onChange={(e)=>{setName(e.target.value)}}
@@ -100,7 +99,7 @@ import Button from '@mui/material/Button';
                         onChange={(e)=>{setEmail(e.target.value)}}
                         
                         />
-                        <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText>
+                        <FormHelperText className='formtext' id="my-helper-text">We'll never share your email.</FormHelperText>
                         
                         </div>
   
@@ -109,8 +108,9 @@ import Button from '@mui/material/Button';
                             onChange={(e)=>{setMessage(e.target.value)}}
                             
                             />
+                            
                            <Button className='contactbtn' type='submit' variant="contained">Submit</Button>
-                        </FormControl>
+                        </form>
 
                      
 
@@ -122,7 +122,7 @@ import Button from '@mui/material/Button';
                   
                  
              
-
+                {/* <br></br> */}
 
             </div>
         )

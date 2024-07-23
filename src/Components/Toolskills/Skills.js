@@ -91,10 +91,10 @@ const SkillsTools=()=>{
       ]
     return(
         <>
-            <div className='skill ' >
+            <div className='skills-tools ' id='skills-tools' >
       <h1>SKILLS-TOOLS</h1>
       <div style={{width:"100vw",justifyContent:"center",alignItems:'center', display:"flex"}} >
-        <div style={{width:"90%"}}>
+        <div className='containerskill' style={{width:"90%"}}>
        
            <h4 className='skillset'>Skillset :</h4>
            <div className='skillsetcontainer'>

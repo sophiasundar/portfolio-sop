@@ -29,6 +29,7 @@ function BountifulBowl(){
                   <div  className="card" >
                           
                           <CardMedia
+                              className='cardimg'
                               component="img"
                               sx={{ height: 260 }}
                               image={BountiBowl}
@@ -63,7 +64,7 @@ function BountifulBowl(){
                                 </Card>
                                            </div>
                                            <div className='fea'>
-                                           <Card className='card1' sx={{ minWidth: 175, height: 353 }}>
+                                           <Card className='card2' sx={{ minWidth: 175, height: 353 }}>
                                   <CardContent>
                                     <Typography sx={{ fontSize: 14 }}  gutterBottom>
                                     <h4>Features: </h4>
@@ -99,7 +100,7 @@ function BountifulBowl(){
                   
                   </div>
               </Paper>
-                  
+                  <br></br>
                  
           </div>
       </div>
