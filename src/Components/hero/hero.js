@@ -49,7 +49,7 @@ const Hero = () =>{
 
                         <Tooltip title='Resume'>
                         <IconButton color="primary"  component="label" >
-                        <a href='https://drive.google.com/file/d/1-1OS6SoCp7AlKAMlciF-lQZjicmdvjSa/view?usp=sharing' rel="noreferrer" target="_blank">
+                        <a href='https://drive.google.com/file/d/1-6teH4eIkpKIYSJempJwM_ZP7rrjLjhg/view?usp=sharing' rel="noreferrer" target="_blank">
                          <ArticleIcon/>
                         </a> 
                        </IconButton>
