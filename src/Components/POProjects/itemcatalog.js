@@ -89,8 +89,10 @@ import Typography from '@mui/material/Typography';
                            </div>
 
 
-                      <Stack className='buttons' direction="row-reverse" spacing={2}>
-                          <Button size="small" variant='contained' href="https://github.com/sophiasundar/capstone" target="_blank" startIcon={<GitHubIcon />}>Github</Button>
+                      <Stack className='buttonspro'  direction="row-reverse" textAlign={'center'} spacing={1}>
+                          
+                          <Button size="small" variant='contained' href="https://github.com/sophiasundar/B47-Backend-FS/tree/main/capstoneFS" target="_blank" startIcon={<GitHubIcon />}>Github BE</Button>
+                          <Button size="small" variant='contained' href="https://github.com/sophiasundar/capstone" target="_blank" startIcon={<GitHubIcon />}>Github FE</Button>
                           <Button size="small"  variant='contained' href="https://frontendcapstone-7ipu.vercel.app/" target="_blank" startIcon={<LaunchIcon/>} >Site</Button>
                       </Stack>
                      

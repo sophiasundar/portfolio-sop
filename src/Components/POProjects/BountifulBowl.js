@@ -91,8 +91,9 @@ function BountifulBowl(){
                                    </div>
                            </div>
 
-                      <Stack className='buttons' direction="row-reverse" spacing={2}>
-                          <Button size="small" variant='contained' href="https://github.com/sophiasundar/bountifulbowl" target="_blank" startIcon={<GitHubIcon />}>Github</Button>
+                      <Stack className='buttonspro' direction="row-reverse" spacing={2}>
+                          <Button size="small" variant='contained' href="https://github.com/sophiasundar/B47-Backend-FS/tree/main/bountifulBowlBE" target="_blank" startIcon={<GitHubIcon />}>Github BE</Button>
+                          <Button size="small" variant='contained' href="https://github.com/sophiasundar/bountifulbowl" target="_blank" startIcon={<GitHubIcon />}>Github FE</Button>
                           <Button size="small"  variant='contained' href="https://bountifulbowl.vercel.app/" target="_blank" startIcon={<LaunchIcon/>} >Site</Button>
                       </Stack>
                      
