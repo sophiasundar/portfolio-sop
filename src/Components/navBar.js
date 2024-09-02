@@ -2,22 +2,17 @@ import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
 import { NavLink } from 'react-router-dom';
 import Tooltip from '@mui/material/Tooltip';
 import Stack from '@mui/material/Stack';
-// import { makeStyles } from '@material-ui/core/styles';
 import WavingHandIcon from '@mui/icons-material/WavingHand';
-// import LightModeIcon from '@mui/icons-material/LightMode';
-// import DarkModeIcon from '@mui/icons-material/DarkMode';
+
 
 
 
 function PortNavBar (){
       
-    // const useStyles = makeStyles((theme)=>{
-        
-    // })
+    
    
     
 
@@ -39,36 +34,31 @@ function PortNavBar (){
 
                 
 
-                <Stack direction="row" spacing={0}  className='boxnav' sx={{ flexGrow: 1, display: { xs: '6', md: '1' } }}>
+                <Stack direction="row" spacing={8}  className='boxnav' sx={{ flexGrow: 1, display: { xs: '6', md: '1' } }}>
                
                
                     
                     
                
-                 <Button variant='h6' sx={{ my: 3, display: 'block',  fontFamily: 'monospace', fontWeight: 800,
-                    }}   >
-                        <NavLink style={{ color: 'black' }} className='navlink' to="/" activeClassName="active" exact>Home</NavLink>
-                    </Button>
+                
+                        <NavLink variant='h6' style={{ my: 3, display: 'block', fontWeight: 'bold', color: 'black' }} className='navlink' to="/" activeClassName="active" exact>Home</NavLink>
+                   
 
-                    <Button variant='h6' sx={{ my: 3, display: 'block',  fontFamily: 'monospace', fontWeight: 800,
-                     }}     >
-                        <NavLink style={{ color: 'black' }} to="/about" activeClassName="active">About</NavLink>
-                    </Button>
+                   
+                        <NavLink variant='h6'style={{ my: 3, display: 'block', fontWeight: 'bold', color: 'black' }} to="/about" activeClassName="active">About</NavLink>
+                    
 
-                    <Button variant='h6' sx={{ my: 3, display: 'block', fontFamily: 'monospace', fontWeight: 800,}}
-                             >
-                      <NavLink style={{ color: 'black' }} to="/skills-tools" activeClassName="active">Skills&tools</NavLink>
-                    </Button>
+                    
+                      <NavLink variant='h6' style={{ my: 3, display: 'block', fontWeight: 'bold', color: 'black' }} to="/skills-tools" activeClassName="active">Skills&tools</NavLink>
+                    
 
-                    <Button variant='h6' sx={{ my: 3, display: 'block', fontFamily: 'monospace', fontWeight: 800,}}
-                             >
-                      <NavLink style={{ color: 'black' }} to="/projects" activeClassName="active">Projects</NavLink>
-                    </Button>
+                    
+                      <NavLink variant='h6' style={{ my: 3, display: 'block', fontWeight: 'bold', color: 'black' }} to="/projects" activeClassName="active">Projects</NavLink>
+                   
 
-                    <Button variant='h6' sx={{ my: 3, display: 'block', fontFamily: 'monospace', fontWeight: 800,}}
-                             >
-                      <NavLink style={{ color: 'black' }} to="/contact" activeClassName="active">Contact</NavLink>
-                    </Button>
+                    
+                      <NavLink variant='h6' style={{ my: 3, display: 'block', fontWeight: 'bold', color: 'black' }} to="/contact" activeClassName="active">Contact</NavLink>
+                    
 
                     
 
