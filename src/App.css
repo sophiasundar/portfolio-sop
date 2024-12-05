@@ -145,6 +145,21 @@
     color: #61dafb;
   }
 
+  .waving-hand {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  }
+  
+  @keyframes wave-animation {
+    0% { transform: rotate(0deg) }
+    10% { transform: rotate(14.0deg) }
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+  }
+  
   .hero{
     margin-left: 10px;
   }

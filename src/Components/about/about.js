@@ -4,7 +4,6 @@ import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-// import about2 from '../assets/profile/about2.png';
 import about  from '../assets/about/girl coder.gif';
 
 export default function About(){
@@ -19,7 +18,7 @@ export default function About(){
           component="img"
           height="450"
           image={about}
-          alt="green iguana"
+          alt="about"
         />
         </div>
         <div className='cardcontent'>

@@ -5,12 +5,14 @@ import ArticleIcon from '@mui/icons-material/Article';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import about from '../assets/profile/about.png'
 import Tooltip from '@mui/material/Tooltip';
-
+import { useTheme } from '@mui/material/styles';
+import { useMediaQuery } from '@mui/material';
 
 
 const Hero = () =>{
 
-   
+   const theme = useTheme();
+   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
     return(
        <>
@@ -60,9 +62,37 @@ const Hero = () =>{
                  </div>
                  </div>
                  <div className='paper'>
-                 <Paper className='d-flex flex-column justify-content-end m-4' elevation={16} style={{borderRadius:"50px" , border:"2px solid black",backgroundColor:"transparent"}}>
-                 <img src={about} alt='about' className="image"/>
-                 </Paper>
+                 <Paper
+          elevation={16}
+          sx={{
+            borderRadius: '50%',
+            overflow: 'hidden',
+            width: isMobile ? '200px' : '300px', // Adjust size for mobile
+            height: isMobile ? '200px' : '300px',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            margin: '0 auto',
+            backgroundColor: 'transparent',
+            border: `5px solid ${theme.palette.primary.main}`,
+            transition: 'transform 0.3s ease-in-out',
+            '&:hover': {
+              transform: 'scale(1.05)', // Hover effect to enlarge image
+            },
+          }}
+        >
+          <img
+            src={about}
+            alt="About Sophia"
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              borderRadius: '50%',
+            }}
+          />
+        </Paper>
+
                  </div>
                     
              </div>

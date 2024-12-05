@@ -91,11 +91,52 @@ function BountifulBowl(){
                                    </div>
                            </div>
 
-                      <Stack className='buttonspro' direction="row-reverse" spacing={2}>
-                          <Button size="small" variant='contained' href="https://github.com/sophiasundar/B47-Backend-FS/tree/main/bountifulBowlBE" target="_blank" startIcon={<GitHubIcon />}>Github BE</Button>
-                          <Button size="small" variant='contained' href="https://github.com/sophiasundar/bountifulbowl" target="_blank" startIcon={<GitHubIcon />}>Github FE</Button>
-                          <Button size="small"  variant='contained' href="https://bountifulbowl.vercel.app/" target="_blank" startIcon={<LaunchIcon/>} >Site</Button>
-                      </Stack>
+                           <Stack direction="row" justifyContent="flex-start" spacing={2} mt={2}>
+                <Button
+                  size="small"
+                  variant="contained"
+                  href="https://github.com/sophiasundar/B47-Backend-FS/tree/main/bountifulBowlBE"
+                  target="_blank"
+                  startIcon={<GitHubIcon />}
+                  sx={{
+                    '&:hover': { backgroundColor: '#1d1d1d' },
+                    backgroundColor: '#333',
+                    color: 'white',
+                  }}
+                >
+                  Github BE
+                </Button>
+                <Button
+                  size="small"
+                  variant="contained"
+                  href="https://github.com/sophiasundar/bountifulbowl"
+                  target="_blank"
+                  startIcon={<GitHubIcon />}
+                  sx={{
+                    '&:hover': { backgroundColor: '#1d1d1d' },
+                    backgroundColor: '#333',
+                    color: 'white',
+                  }}
+                >
+                  Github FE
+                </Button>
+                <Button
+                  size="small"
+                  variant="contained"
+                  href="https://bountifulbowl.vercel.app/"
+                  target="_blank"
+                  startIcon={<LaunchIcon />}
+                  sx={{
+                    '&:hover': { backgroundColor: '#1d1d1d' },
+                    backgroundColor: '#333',
+                    color: 'white',
+                  }}
+                >
+                  Site
+                </Button>
+              </Stack>
+
+                     
                      
                   </div>
                   
