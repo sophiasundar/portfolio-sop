@@ -191,11 +191,11 @@
     margin-right: 150px;
 }
 
-.project{
+/* .projects{
   margin-top: 40px ;
   margin-bottom: 40px;
   margin-right: -70px;
-}
+} */
 .ppaper{
   box-shadow: rgba(0, 0.55, 0, 0.55) 0px 5px 15px;
   color: white;
@@ -424,3 +424,4 @@
 .containerskill{
   margin-right: 130px;
 }
+
